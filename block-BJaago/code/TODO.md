@@ -25,8 +25,8 @@ var userMessage = sayHelloToUser('Bran');
 ```
 
 <!-- Put your image below -->
+`![](.img/image-image.png)![image](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/9b3f53ff-22f0-4f2b-9bfb-607da321e1cd)
 
-![](./img/image-name.jpg)
 
 2.
 
