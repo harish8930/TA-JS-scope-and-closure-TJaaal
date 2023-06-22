@@ -1,3 +1,4 @@
+![WhatsApp Image 2023-06-22 at 6 34 21 PM](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/3303d511-96d4-44ac-a6bb-3e6c0c7bd68e)
 To create the execution context diagram consider the following:
 
 - Global and Function Execution Context
