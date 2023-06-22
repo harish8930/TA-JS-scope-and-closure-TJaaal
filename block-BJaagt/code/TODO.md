@@ -19,8 +19,8 @@ The above code will throw an error `Reference Error username is not defined`.
 {
   const username = 'Arya';
 }
-console.log(useranme); // output
-```
+console.log(useranme); // 
+in this example we are looking for username but the username is not present in global scope so it will show an error username is not defined.
 
 3. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -29,7 +29,7 @@ if (true) {
   let username = 'Arya';
 }
 console.log(useranme); // output
-```
+in this example we are looking for username but the username is not present in global scope so it will show an error username is not defined.
 
 4. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -38,7 +38,7 @@ if (true) {
   var username = 'Arya';
 }
 console.log(useranme); // output
-```
+in this example we are looking for username but the username is not present in global scope so it will show an error username is not defined.
 
 5. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -48,7 +48,7 @@ if (true) {
   var username = 'Arya';
 }
 console.log(useranme); // output
-```
+it will show the  syntax error which show the username already been declared.
 
 6. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
