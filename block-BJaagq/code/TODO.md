@@ -12,14 +12,16 @@ function change() {
   console.log(species);
 }
 
-console.log(species); // 1
+console.log(species); // human
 change();
-console.log(species); // 2
+console.log(species); // vampire
 ```
 
 <!-- Put your image below -->
 
-![](./img/image-name.jpg)
+![WhatsApp Image 2023-06-22 at 9 39 55 AM](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/2c01f750-a229-43a3-966d-6d047c6e3f31)
+
+  
 
 - Create the execution context diagram
 - What will be the value of species on 1 and 2
@@ -35,9 +37,8 @@ function topLevelFn() {
   function nestedFn() {
     var anotherLocalVar = "Local to nestedFn's scope.";
 
-    console.log(localVar); // 1
-    console.log(topLevelVar); // 2
-  }
+    console.log(localVar); // "This is  local to toplevelfn's scope";
+    console.log(topLevelVar); // "this is a global scope";
 
   nestedFn();
 }
