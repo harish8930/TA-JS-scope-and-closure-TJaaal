@@ -33,7 +33,7 @@ counter(); 0
 counter(); 1
 counter(); 2
 counter(); 3
-```![WhatsApp Image 2023-06-23 at 5 02 29 PM (1)](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/35a96406-77c6-4647-9ad7-befd1514cb88)
+![WhatsApp Image 2023-06-23 at 5 02 29 PM (1)](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/35a96406-77c6-4647-9ad7-befd1514cb88)
 
 
 3. Create the execution context diagram
