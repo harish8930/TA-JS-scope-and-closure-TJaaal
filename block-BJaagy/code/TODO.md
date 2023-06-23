@@ -1,6 +1,25 @@
 1. Create a function by your choice that accepts a callback function.
+function higherOrderFunction(number, operation) {
+  return operation(number);
+}
+function double(number) {
+  return number * 2;
+}
+
+const result = higherOrderFunction(5, double);
+console.log(result); 
 
 2. Create a function by you choice that returns a function reference.
+function createMultiplier(multiplier) {
+  return function(number) {
+    return number * multiplier;
+  };
+}
+const double = createMultiplier(2);
+console.log(double(5)); 
+
+const triple = createMultiplier(3);
+console.log(triple(5));
 
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
