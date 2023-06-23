@@ -10,38 +10,37 @@ function multiplyArrayByN(arr, cb) {
   }
   return finalArr;
 }
+
 function addFive(n) {
   return n + 5;
 }
+
 function multiplyBy5(n) {
   return n * 5;
 }
+
 let numbersAddedFive = multiplyArrayByN(marks, addFive);
 let numbersMultipliedBy5 = multiplyArrayByN(marks, multiplyBy5);
 ```
-
+answer// multiplyArrayByN  is higher order function because it is accept a callback fun ction as an parameter.
 2. Create the execution context diagram of the above code snippet
+![WhatsApp Image 2023-06-22 at 6 34 21 PM](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/4235f0b9-b0a3-4f85-be4d-3e7e88721b9a)
+
 
 3. Write a higher order function that accepts a number and a operation function (callback function). Call the callback function passing the number as argument and return the returned value.
 
 ```js
-function operation(n, opFn) {
-  // your code goes her
+
+function highorder(num,cb){
+return cb(num);
 }
-// TEST
-console.log(
-  operation(21, function (n) {
-    return n / 10;
-  })
-);
-// Output: 2.1
-console.log(
-  operation(10, function (n) {
-    return (n * n) / 5;
-  })
-);
-// Output: 20
-```
+
+function double(n){
+  let result = n*2
+  return result;
+}
+
+ let numberdouble = highorder(5,double);
 
 4. Write a higher order function that accepts a string and a operation function (callback function). Call the callback function passing the string as argument and return the returned value.
 
