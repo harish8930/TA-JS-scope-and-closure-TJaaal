@@ -33,9 +33,15 @@ map(['Sam', 'Jon', 'Arya'], (name) => name + name); // ['SamSam', 'JonJon', 'Ary
 - It should work exactly like array `filter` method
 
 ```js
-function filter() {
-  // Your code goes here
+function filter(array, callback) {
+  return array.reduce((acc, current) => {
+    if (callback(current)) {
+      acc.push(current);
+    }
+    return acc;
+  }, []);
 }
+
 filter(['Sam', 'Jon', 'Arya'], (name) =>
   name.startsWith('S')
 ); // ['Sam']
