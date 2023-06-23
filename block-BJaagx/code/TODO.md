@@ -24,7 +24,8 @@ let numbersMultipliedBy5 = multiplyArrayByN(marks, multiplyBy5);
 ```
 answer// multiplyArrayByN  is higher order function because it is accept a callback fun ction as an parameter.
 2. Create the execution context diagram of the above code snippet
-![WhatsApp Image 2023-06-22 at 6 34 21 PM](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/4235f0b9-b0a3-4f85-be4d-3e7e88721b9a)
+![WhatsApp Image 2023-06-23 at 11 53 03 AM](https://github.com/harish8930/TA-JS-scope-and-closure-TJaaal/assets/129581462/4e7e4857-9df8-4c20-b429-9b9933d84963)
+
 
 
 3. Write a higher order function that accepts a number and a operation function (callback function). Call the callback function passing the number as argument and return the returned value.
