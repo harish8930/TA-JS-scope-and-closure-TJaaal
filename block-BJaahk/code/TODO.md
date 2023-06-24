@@ -6,8 +6,18 @@ The returned function accepts a sentence. If the sentence contains the `fromWord
 
 ```js
 function censor(fromWord, toWord) {
-  //  Your code goes here
+  return function(sentence) {
+    let words = sentence.split(' ');
+    let newWords = words.map(function(word) {
+      if (word.toLowerCase() === fromWord.toLowerCase()) {
+        return toWord;
+      }
+      return word;
+    });
+    return newWords.join(' ');
+  };
 }
+
 
 let censorSentence = censor('World', 'Sam');
 censorSentence('Hello World'); // Hello Sam
