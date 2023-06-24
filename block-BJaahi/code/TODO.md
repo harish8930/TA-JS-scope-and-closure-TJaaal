@@ -61,12 +61,22 @@ let message = sayHello(username);
 var nextMessage = sayHello('Test');
 ```
 
-<!-- Answer -->
-
-```js
-// Your code goes here
+<!-- Answer 
+//decalration phase 
+username = undefined;
+number;
+function sayhello(){
+return `Hello ${name}`;
+}
+message;
+nextMessage = undefined;
+//execution phase 
+console.log(undefined,undefined);
+username = "Arya"
+number = 21;
+let message = sayHello(username);
+var nextMessage = sayHello('Test');
 ```
-
 3.
 
 ```js
