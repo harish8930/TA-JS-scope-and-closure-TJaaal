@@ -23,6 +23,7 @@ function once(cb) {
 
 // TEST
 let log = once(console.log, 'Hello Console');
+
 log(); // log message "Hello Console"
 log(); // return undefinde (can't be called twice)
 ```
