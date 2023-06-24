@@ -15,6 +15,9 @@ console.log(
   window.knownAs
 );
 ```
+undefined.
+undefined
+no one
 
 2. Guess the output:
 
@@ -28,7 +31,7 @@ function fullName(a, b) {
 }
 
 console.log(window.fullName(firstName, lastName));
-```
+aryastark
 
 3. Make a Execution Context Diagram for the following JS and write the output.
 
