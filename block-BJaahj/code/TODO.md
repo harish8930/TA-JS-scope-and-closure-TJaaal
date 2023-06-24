@@ -15,7 +15,31 @@ console.log(
     }
   )
 ); // should log: { hi: 'HI', bye: 'BYE', later: 'LATER' }
-```
+function objOfMatches(array1, array2, callback) {
+  const result = {};
+
+  for (let i = 0; i < array1.length; i++) {
+    const value = array1[i];
+    const transformedValue = callback(value);
+    const match = array2[i];
+
+    if (transformedValue === match) {
+      result[value] = match;
+    }
+  }
+
+  return result;
+}
+console.log(
+  objOfMatches(
+    ['hi', 'howdy', 'bye', 'later', 'hello'],
+    ['HI', 'Howdy', 'BYE', 'LATER', 'hello'],
+    function (str) {
+      return str.toUpperCase();
+    }
+  )
+);
+
 
 2. Construct a function `multiMap` that will accept two arrays: an array of values and an array of callbacks. `multiMap` will return an object whose keys match the elements in the array of values. The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks, where the input to each callback is the key.
 
