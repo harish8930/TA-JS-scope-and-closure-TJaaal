@@ -2,54 +2,79 @@
 
 1. Write a function called `multiplyBy` that takes a `number` as an argument and returns a function. Returned function takes another `number` as an argument and returns the multiplication of both the numbers.
 
-```js
-// Your code goes here
+function multiplyBy(number) {
+  return function (anotherNumber) {
+    return number * anotherNumber;
+  };
+}
 
-const double = multiplyBy(2);
-const final = double(15); // final should be 30
-```
+// Usage
+const multiplyByTwo = multiplyBy(2);
+console.log(multiplyByTwo(4)); // Output: 8
+
+const multiplyByFive = multiplyBy(5);
+console.log(multiplyByFive(3)); // Output: 15
+
 
 2. Write a function called `fullName` that takes a string `firstName` as an argument and returns a function. Returned function takes another string `lastName` as an argument and returns full name.
 
 ```js
-// Your code goes here
+function fullname(fn){
+return function (ln){
+    return `${fn}  ${ln}`
+}
 
-const name = fullName('Will');
-const final = name('Smith'); // final should be "Will Smith"
-```
+}
+const firstname = fullname("dwayne")
+ console.log(firstname("johnson"));
+ //output dwayne johnson
 
 3. Write a function called `isInBetween` which takes two parameter `a` and `b` and returns a function. When you call the returned function with any number it returns `true` if the value is in between `a` and `b`.
 
-```js
-function isInBetween(a, b) {
-  // your code goes here
+function isInbetween(a,b){
+    return function(value){
+if(value > a && value <  b){
+    console.log(true);
+}else{
+    console.log(false);
+}
+    }
 }
 
-const isChild = isInBetween(10, 100);
-isChild(21); // true
-isChild(45); // true
-isChild(103); // false
-```
+
+const isChild = isInbetween(10,100);
+isChild(16); //output true;
+isChild(109);// output false;
+
 
 4. Write a function call `letsWishThem` that take one parameter `string` called `greeting` and returns a function that takes another argument called `message`.
 
 ```js
-function letsWishThem(greeting) {
-  // your code goes here
+function letsWishThem(greeting){
+return function (message){
+    return `${greeting} ${message}`
+}
 }
 
-const callWithHey = letsWishThem('Hey');
-const callWithHello = letsWishThem('Hello');
-callWithHey('Arya'); // Hey Arya
-callWithHello('How Are You?'); // Hello How Are You?
+const hello = letsWishThem("Hey");
+hello(" How are you ?");
+console.log(hello("How are you ? "));
 ```
 
 5. Write a function called `addGame` which takes a string (name of the game) and the current score. It returns a function calling that will increment the score by one and print something like `Score of Basketball is 1`.
 
 ```js
-function addGame(gameName) {
-  // your code goes here
+function addGame(gameName,score){
+return function(){
+ score++
+console.log(`score of ${gameName} is ${score} `)
+
 }
+
+}
+
+const gamescore = addGame('cricket',0);
+gamescore();
 
 // Output
 const hockey = addGame('Hockey', 0);
