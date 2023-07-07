@@ -47,9 +47,17 @@ function double(n){
 
 ```js
 function operation(str, opFn) {
-  // your code goes her
+ function operation(str, cb) {
+    return cb(str);
+   }
+
+ console.log(operation("learning to fly",function (text){
+   return text.toUpperCase();
+   }));
+
+
 }
-// TEST
+// TES  //T
 console.log(
   operation("Learning to fly", function (text) {
     return text.toUpperCase();
